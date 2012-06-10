@@ -7,15 +7,11 @@
 	<link rel="stylesheet" href="style.css"> <!-- Change theme here -->
     <script type="text/javascript">
         window.addEvent('domready', function(){
-            document.id('total-slides').set("text", pik.slides.length - 1);
-            document.id('current-slide').set("text", window.parent.pik.getCurrent());
+            document.id('total-slides').set("text", pik.slides.length);
+            document.id('current-slide').set("text", window.parent.pik.getCurrent() + 1);
         });
-        window.parent.addEvent('pikChangeSlideNext', function(){
-            window.console.log(event);
-            document.id('current-slide').set("text", window.parent.pik.getCurrent());
-        });
-        window.parent.addEvent('pikChangeSlidePrev', function(){
-            document.id('current-slide').set("text", window.parent.pik.getCurrent());
+        window.parent.addEvent('hashchange', function(){
+            window.document.id('current-slide').set("text", window.parent.pik.getCurrent() + 1);
         });
     </script>
 </head>
