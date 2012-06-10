@@ -1,16 +1,18 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Mediation in Gesprächen</title>
-	<script src="../../lib/pik.js"></script> <!-- Important - do not remove or rename! -->
-	<link rel="stylesheet" href="style.css"> <!-- Change theme here -->
+    <meta charset="utf-8">
+    <title>Mediation in Gesprächen</title>
+    <script src="../../lib/pik.js"></script>
+    <!-- Important - do not remove or rename! -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Change theme here -->
     <script type="text/javascript">
-        window.addEvent('domready', function(){
+        window.addEvent('domready', function () {
             document.id('total-slides').set("text", pik.slides.length);
             document.id('current-slide').set("text", window.parent.pik.getCurrent() + 1);
         });
-        window.parent.addEvent('hashchange', function(){
+        window.parent.addEvent('hashchange', function () {
             window.document.id('current-slide').set("text", window.parent.pik.getCurrent() + 1);
         });
     </script>
@@ -19,40 +21,76 @@
 
 <div id="header"></div>
 
-<div id="Pik-hide"></div> <!-- Important - do not remove or rename! -->
+<div id="Pik-hide"></div>
+<!-- Important - do not remove or rename! -->
 
 <div id="Pik-presentation-container"> <!-- Important - do not remove or rename! -->
 
-<div class="pik-slide">
-	<h1>Mediation in Gesprächen</h1>
-    <img src="assets/mediation.svg" style="position: absolute; right: 0px; bottom: 0px; height: 8em; margin-bottom: 2em; margin-right: 1em; width: 10em; height: 10em">
+    <div class="pik-slide">
+        <h1>Mediation in Gesprächen</h1>
+        <img src="assets/mediation.svg"
+             style="position: absolute; right: 0px; bottom: 0px; margin-bottom: 2em; margin-right: 1em; height: 10em">
+    </div>
+
+    <div class="pik-slide">
+        <h2>Fahrplan - Was haben wir vor?</h2>
+        <ul>
+            <li>Was ist Mediation?</li>
+            <li>Points</li>
+            <li>Are</li>
+            <li>Awesome</li>
+        </ul>
+        <img src="assets/haltestelle.png"
+             style="position: absolute; right: 1.2em; top: 3.8em; margin-bottom: 2em; margin-right: 1em; width: 10em; height: 10em">
+    </div>
+
+    <div class="pik-slide">
+        <h2>Was ist Mediation?</h2>
+        <ul>
+            <li>Mediation <i>(= lateinisch "Vermittlung")</i>
+                <ul>
+                    <li>freiwilliges Verfahren zur konstruktiven Beilegung eines Konflikts</li>
+                    <li>Erarbeitung einer Lösung durch die Konfliktparteien</li>
+                    <li>Keine Frage nach Schuld oder Vergangenheit
+                        <ul class="arrow-item">
+                            <li>tragfähige Basis für Umgang miteinander</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="pik-slide">
+        <h2>Was ist Mediation?</h2>
+        <ul>
+            <li>Der Mediator ist allparteilich
+                <ul>
+                    <li>trifft keine Entscheidungen</li>
+                    <li>macht keine Vorschläge</li>
+                    <li>bietet lediglich die Werkzeuge</li>
+                </ul>
+            <li>Die Medianden können eine eigene Lösung entwickeln
+                <ul class="arrow-item">
+                    <li>alle sind zufrieden!</li>
+                </ul>
+            </li>
+            </li>
+        </ul>
+    </div>
+
+    <div id="footer">
+        <table>
+            <tr>
+                <td>11.06.2012</td>
+                <td>Philipp Nowinski</td>
+                <td><span id="current-slide"></span> / <span id="total-slides"></span></td>
+            </tr>
+        </table>
+    </div>
+
 </div>
-
-<div class="pik-slide">
-	<h1>Second slide</h1>
-	<p>Second slide content</p>
-	<ul>
-		<li>Bullet</li>
-		<li>Points</li>
-		<li>Are</li>
-		<li>Awesome</li>
-	</ul>
-</div>
-
-<div class="pik-slide">
-    <h1>Second slide</h1>
-    <p>Second slide content</p>
-    <ul>
-        <li>Bullet</li>
-        <li>Points</li>
-        <li>Are</li>
-        <li>Awesome</li>
-    </ul>
-</div>
-
-<div id="footer"><table><tr><td>11.06.2012</td><td>Philipp Nowinski</td><td><span id="current-slide"></span> / <span id="total-slides"></span></td></tr></table></div>
-
-</div> <!-- End #Pik-presentation-container. Do not remove or rename! -->
+<!-- End #Pik-presentation-container. Do not remove or rename! -->
 
 </body>
 </html>

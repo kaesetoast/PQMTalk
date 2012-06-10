@@ -89,12 +89,21 @@ ul, ol {
 	padding-left: 1em;
 }
 ul ul, ol ul, ul ol, li {
-	margin-top: 0.25em;
-	margin-bottom: 0.25em;
+	margin-top: 0.5em;
+	margin-bottom: 1.3em;
+}
+.arrow-item {
+    list-style-type: none;
+    margin-left: -0.5em;
+    font-weight: bold;
+}
+.arrow-item:before {
+    content: "\21E8\00a0";
+    float: left;
 }
 h1, .big h2 {
     color: rgb(15, 15, 15);
-    text-shadow: 1px 1px 5  px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 	font-size: 3em;
 	font-style: normal;
 	margin-top: 0.75em;
@@ -102,7 +111,7 @@ h1, .big h2 {
 h2, .big p {
 	font-size: 1.5em;
 	line-height: 1.25;
-	color: #083;
+	color: #D20F0D;
 	font-style: italic;
 	font-weight: bold;
 	font-size: 1.8em;
@@ -120,6 +129,9 @@ h2.overlay {
 	left: 0;
 	right: 0;
 	padding: 0.5em 0;
+}
+i {
+    color: #D20F0D;
 }
 pre {
 	overflow: hidden;
