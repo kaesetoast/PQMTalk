@@ -92,6 +92,11 @@ ul ul, ol ul, ul ol, li {
 	margin-top: 0.5em;
 	margin-bottom: 1.3em;
 }
+.index ul ul, .index ol ul, .index ul ol, .index li {
+    margin-top: 0.6em;
+    margin-bottom: 1.5em;
+    list-style-type: upper-roman;
+}
 .arrow-item {
     list-style-type: none;
     margin-left: -0.5em;
@@ -130,7 +135,23 @@ h2.overlay {
 	right: 0;
 	padding: 0.5em 0;
 }
+.between-title {
+    width: 70%;
+    margin: auto;
+    background-color: #D20F0D;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+    color: white;
+    font-size: 2em;
+    line-height: 1.4em;
+    box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.5);
+}
 i {
+    color: #D20F0D;
+}
+strong {
     color: #D20F0D;
 }
 pre {
